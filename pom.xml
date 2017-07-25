@@ -10,6 +10,10 @@
         <module>spring-core</module>
         <module>spring-context</module>
         <module>spring-bean</module>
+        <module>spring-tx</module>
+        <module>spring-jdbc</module>
+        <module>spring-aop</module>
+        <module>spring-web</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-root</name>
