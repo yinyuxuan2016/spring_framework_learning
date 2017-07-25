@@ -6,6 +6,11 @@
     <groupId>org.yinyuxuan.com</groupId>
     <artifactId>spring-learning</artifactId>
     <version>1.0.0</version>
+    <modules>
+        <module>spring-core</module>
+        <module>spring-context</module>
+        <module>spring-bean</module>
+    </modules>
     <packaging>pom</packaging>
     <name>spring-root</name>
     <!--开发人员说明-->
