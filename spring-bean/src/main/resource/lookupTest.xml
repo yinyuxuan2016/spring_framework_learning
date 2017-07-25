@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.1.xsd"  default-lazy-init="true">
+    <bean id="getBeanTest" class="org.yinyuxuan.com.GetBeanTest">
+        <!--指定泛型的返回类型，返回类型可以在bean中自己定义-->
+        <lookup-method name="getBean" bean="student"></lookup-method>
+    </bean>
+    <bean id="teacher" class="org.yinyuxuan.com.Teacher"></bean>
+    <bean id="student" class="org.yinyuxuan.com.Student"></bean>
+</beans>

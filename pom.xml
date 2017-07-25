@@ -14,6 +14,7 @@
         <module>spring-jdbc</module>
         <module>spring-aop</module>
         <module>spring-web</module>
+        <module>spring-doc</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-root</name>
@@ -112,4 +113,16 @@
             </plugins>
         </pluginManagement>
     </build>
+    <properties>
+        <spring.version>4.2.5.RELEASE</spring.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
